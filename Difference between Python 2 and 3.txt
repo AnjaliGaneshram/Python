@@ -1,0 +1,66 @@
+Jan - 15 - 2022
+1. Difference between Python - 2 and 3
+
+Python - 2
+
+Print is a statment - It can be executed within single quote or within braces and single quote
+
+Division - Division operator will return the integer value
+
+Sometimes the input value will be read as data types other than 'str'
+
+String will be stored as ASCII code if it should be stored as Unicode the function needs a letter u before it.
+
+xrange() is used for Iterations.
+
+
+Python - 3
+
+Print is a function where parantheses is necessary.
+
+Division Operator will return float value
+
+Input value will always read as 'str' data type.
+
+String will store as Unicode by default
+
+range() function is used for iterations
+
+Advantages and Disadvantages of Compiler & Interpreter.
+
+What Is Compiler?
+Compiler is a computer program that is developed to translate the high-level language (source code) into a computer-readable format known as low-level language or machine code.
+It reads the whole source code at once, compiles it,  and then generates an executable file from it. Which is later executed or ran by us, in order to perform the instruction we programmed. And while reading the source code it returns all the errors at once if there are any.
+
+What Is An Interpreter?
+Just like a compiler, interpreters also do the same job. It also translates the high-level language into low-level languages.
+But it does it differently, unlike compiler, interpreter reads the source code line by line and warns you at the same time if there’s an error, which makes it easy to debug but slower compared to the compiler.
+
+Advantages Of Compiler
+1. Runs Faster → It runs faster than the Interpreter since the source code is already compiled and we only need to execute the executable file is generated.
+2. Optimized → Machine code of executable file generated with a compiler is often a native machine instruction for the targeted machine which is well optimized and runs faster. 
+3. Secure → Executable files generated from the compiler can be executed on any of your clients or other systems without the need for actual source code. Which makes your program unhackable, secure and private 
+4. No dependencies → Your client or anyone else doesn’t need any compiler, interpreter, or third party program to be installed in their system, for executing the shared executable file of your source code.
+
+Disadvantages Of Compiler
+1. Extra Memory → It occupies extra memory since it needs to generate a new file.
+Extra step → Unlike interpreter, we can’t run our source code directly, we need to additionally run the executable file.
+2. Incompatibility issue → Since its code is optimized for the system it was executed on, which many times leads to system incompatibility issue even if the system is running on the same OS.
+3. Harder to Debug → After reading the whole code it returns all errors at once if available, which makes it harder to navigate and fix the error.
+
+Advantages Of Interpreter
+1. Cross-Platform → In interpreted language we directly share the source code which can run on any system without any system incompatibility issue.
+2. Easier To Debug → Code debugging is easier in interpreters since it reads the code line by line, and returns the error message on the spot. Also, the client with the source code can debug or modify the code easily if they need to.
+3. Less Memory and Step → Unlike the compiler, interpreters don’t generate new separate files. So it doesn’t take extra Memory and we don’t need to perform one extra step to execute the source code, it is executed on the fly.
+4. Execution Control → Interpreter reads code line by line so you can stop the execution and edit the code at any point, which is not possible in a compiled language. However, after being stopped it will start from the beginning if you execute the code again.
+
+Disadvantages Of Interpreter
+1. Slower → Interpreter is often slower than compiler as it reads, analyzes and converts the code line by line.
+2. Dependencies file required → A client or anyone with the shared source code needs to have an interpreter installed in their system, in order to execute the code.
+3. Less Secure → Unlike compiled languages, an interpreter doesn’t generate any executable file so to share the program with others we need to share our source code which is not secure and private. So it is not good for any company or corporations who are concerned about their privacy.
+
+Python is an interpreted language, which means the source code of a Python program is converted into bytecode that is then executed by the Python virtual machine. Python is different from major compiled languages, such as C and C + +, as Python code is not required to be built and linked like code for these languages. This distinction makes for two important points:
+
+1. Python code is fast to develop: As the code is not needed to be compiled and built, Python code can be readily changed and executed. This makes for a fast development cycle.
+
+2. Python code is not as fast in execution: Since the code is not directly compiled and executed and an additional layer of the Python virtual machine is responsible for execution, Python code runs a little slow as compared to conventional languages like C, C + +, etc.
