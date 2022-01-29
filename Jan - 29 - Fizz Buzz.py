@@ -16,3 +16,4 @@ elif n%5==0:
     print("Buzz")
 else:
     print("Invalid Number")
+''' This program is to identify if the given number is divisible by 3 or 5 or both.'''
