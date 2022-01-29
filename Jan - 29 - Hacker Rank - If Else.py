@@ -17,3 +17,4 @@ elif num>=6 and num<=20:
     print("Weird")
 elif num>20:
     print("Not Weird")
+''' This program is to identify the given number is "Weird" or "Not Weird" based on the conditions given in the Task section.'''
