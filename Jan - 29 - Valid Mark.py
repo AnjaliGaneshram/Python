@@ -15,3 +15,4 @@ elif mark>50:
         print("Grade: B")
     elif mark>=90 and mark<=100:
         print("Grade: A")
+''' This program is to identify under which grade the given mark belongs to.'''        
