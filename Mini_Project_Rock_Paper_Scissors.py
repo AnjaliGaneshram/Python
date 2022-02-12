@@ -15,28 +15,38 @@ def scissor(c,d):
     else:
         return "True"
 def valid(e):
-    if any((a=='rock',a=='paper',a=='scissor')):
+    
+    if any((e=='rock',e=='paper',e=='scissor')):
         return e
     else:
         e = input("Invalid choice, Your choice can only be rock, paper or scissor: ")
-        return e
+        f = valid(e.lower())
+        
+        return f
+
+    
 list2 = []
 list1 = ["rock","paper","scissor"]
+try:
+    n = int(input("Number of games you want to play: "))
+except:
+    n = int(input("Enter only numbers: "))
+while n == 0:
+    n = int(input("Enter the valid number: "))
 
-n = int(input("Number of games you want to play: "))
 j = 0
 k=0
 l =0
-if n == 0:
-    print("Game Over")
+
 tie = 0
 for i in range(n):
-    a = input("Enter your choice: ")
+    print("Game {}:".format(i+1))
+    a = input("\nEnter your choice(Choices can only be rock,paper or scissor): ")
     a.lower()
     f = valid(a)
     b = random.choice(list1)
-    print("Your choice: ", f)
-    print("System's choice: ",b)
+    print("\nYour choice: ", f)
+    print("\nSystem's choice: ",b)
     if f==b:
         c = "tie"
         list2.append(c)
@@ -55,13 +65,13 @@ for i in range(n):
         list2.append(c)
     if c=="True":
         j = j +1
-        print("User Wins:", j)
+        print("\nUser Wins:", j)
     elif c=="False":
         k = k+1
-        print("System Wins: ", k)
+        print("\nSystem Wins: ", k)
     else:
         l = l + 1
-        print("Tie: ",l)
+        print("\nTie: ",l,"\n")
         
       
 
@@ -70,20 +80,23 @@ y = list2.count("True")
 z = list2.count("False")
 
 
-print("Total No of games played: ",n)
-print("User wins: ", y)
-print("System wins: ", z)
-print("Tie match: ",x)
+print("\nTotal No of games played: ",n)
+print("\nUser wins: ", y)
+print("\nSystem wins: ", z)
+print("\nTie match: ",x,"\n")
 
-if y>x and y>z:
-    print("CONGRATS! USER WINS")
-elif z>y and z>x:
-    print("SYSTEM WINS. TRY AGAIN!")
-elif x>y and y>z:
-    print("CONGRATS! USER WINS")
-else:
-    print("SYSTEM WINS. TRY AGAIN")
+if y>z:
+    if y>x:
+        print("USER WINS!!!")
+    else:
+        print("USER WINS!!! TIED MATCHES: {}".format(x))
 
+elif z>y:
+    
+    if z>x:
+        print("SYSTEM WINS")
+    else:
+        print("SYSTEM WINS!!! TIED MATCHES: {}".format(x))
 
 
     
